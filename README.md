@@ -2,48 +2,66 @@
 
 A modern and responsive online bookstore built with **React, TypeScript, Tailwind CSS, and React Router**.
 
-The project demonstrates a complete shopping flow where users can browse developer-focused books, view product details, manage their cart, and complete a checkout process.
+This project demonstrates a complete e-commerce shopping flow where users can browse developer books, view product details, manage their shopping cart, complete checkout, and receive order confirmation.
 
 ## 🚀 Live Demo
 
-> Coming soon — deployed version will be added here.
+🔗 https://sam59246677.github.io/sam-sbookstore/
 
 ## 📸 Preview
 
 ### Home Page
 
-![Sam's Bookstore](./src/assets/images/clean-code.jpg)
+![Home Page](./screenshots/home.png)
+
+### Product Details
+
+![Product Details](./screenshots/product-details.png)
+
+### Shopping Cart
+
+![Shopping Cart](./screenshots/cart.png)
+
+### Checkout
+
+![Checkout](./screenshots/checkout.png)
+
+### Order Success
+
+![Order Success](./screenshots/success.png)
 
 ## ✨ Features
 
-* 📚 Browse developer and programming books
-* 🔎 View detailed information for each book
-* 🛒 Add books to the shopping cart
-* ➕ Increase product quantity
-* ➖ Decrease product quantity
-* 🗑️ Remove products from the cart
-* 🧹 Clear the entire cart
-* 💰 Automatic cart total calculation
-* 🧾 Checkout form
-* ✅ Order confirmation page
-* 💾 Persist shopping cart data with `localStorage`
-* 📱 Fully responsive design
-* 🧭 Client-side routing with React Router
+* Browse developer and programming books
+* View detailed product information
+* Add books to shopping cart
+* Increase and decrease product quantity
+* Remove products from cart
+* Clear entire cart
+* Automatic total price calculation
+* Checkout form validation
+* Order confirmation page
+* Cart persistence with LocalStorage
+* Responsive design for different screen sizes
+* Client-side routing with React Router
 
-## 🛠️ Technologies
+## 🛠 Technologies Used
 
-* **React**
-* **TypeScript**
-* **Tailwind CSS**
-* **React Router**
-* **Vite**
-* **LocalStorage**
-* **ESLint**
+* React
+* TypeScript
+* Tailwind CSS
+* React Router
+* Vite
+* Context API
+* LocalStorage
+* ESLint
+* Git & GitHub
 
-## 📁 Project Structure
+## 📂 Project Structure
 
 ```text
 src/
+│
 ├── assets/
 │   └── images/
 │
@@ -72,60 +90,40 @@ src/
 └── index.css
 ```
 
-## 🧠 What I Practiced
-
-This project was built to practice real-world React development concepts, including:
-
-* React component architecture
-* TypeScript interfaces and type safety
-* React Context API
-* State management
-* Reusable components
-* React Router
-* Dynamic routes
-* Form handling
-* LocalStorage
-* Array methods such as `map`, `find`, `filter`, and `reduce`
-* Responsive UI development with Tailwind CSS
-* Production builds with Vite
-
-## 🛒 Shopping Cart Architecture
-
-The shopping cart is managed through a dedicated React Context:
-
-```text
-CartContext
-    │
-    ├── cart
-    ├── addToCart()
-    ├── removeFromCart()
-    ├── increaseQuantity()
-    ├── decreaseQuantity()
-    └── clearCart()
-```
-
-This allows different components such as the Navbar, ProductCard, Cart, and Checkout pages to access the same cart state.
-
-## 🔄 Application Flow
+## 🛒 Application Flow
 
 ```text
 Home
-  │
-  ├── Product Details
-  │       │
-  │       └── Add to Cart
-  │
-  └── Cart
+ │
+ ├── Product Details
+ │        │
+ │        └── Add To Cart
+ │
+ └── Cart
           │
           ├── Update Quantity
-          ├── Remove Item
+          ├── Remove Items
           │
           └── Checkout
                   │
-                  └── Place Order
-                          │
-                          └── Success
+                  └── Order Success
 ```
+
+## 🧠 Concepts Practiced
+
+This project was created to practice real-world frontend development concepts:
+
+* React component architecture
+* TypeScript type safety
+* React Hooks
+* Context API state management
+* Reusable components
+* Dynamic routing
+* Form handling
+* LocalStorage
+* Array methods (`map`, `find`, `reduce`)
+* Responsive UI development with Tailwind CSS
+* Production deployment with Vite and GitHub Pages
 
 ## ⚙️ Installation
 
@@ -135,7 +133,7 @@ Clone the repository:
 git clone https://github.com/sam59246677/sam-sbookstore.git
 ```
 
-Navigate into the project:
+Go to the project folder:
 
 ```bash
 cd sam-sbookstore
@@ -147,36 +145,42 @@ Install dependencies:
 npm install
 ```
 
-Start the development server:
+Run development server:
 
 ```bash
 npm run dev
 ```
 
-## 🏗️ Production Build
+## 📦 Production Build
 
-To create a production build:
+Create production build:
 
 ```bash
 npm run build
 ```
 
-To preview the production build:
+Deploy to GitHub Pages:
 
 ```bash
-npm run preview
+npm run deploy
 ```
+
+## 🔮 Future Improvements
+
+Possible improvements:
+
+* Add search functionality
+* Add category filtering
+* Connect to a real backend API
+* Add user authentication
+* Add payment integration
+* Add dark mode
 
 ## 👨‍💻 Author
 
-**Sam**
+**Sam Rostami**
 
 Frontend Developer
 
 GitHub:
-
 https://github.com/sam59246677
-
----
-
-⭐ If you find this project useful, feel free to explore the repository.
